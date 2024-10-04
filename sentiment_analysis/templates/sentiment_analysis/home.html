@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Sentiment</title>
+    <link rel="stylesheet" href="{% static 'sentiment_analysis/home.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Review Sentiment Analysis</h1>
+
+        <form action="{% url 'home' %}" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="review">Enter your movie review:</label>
+                <textarea name="review" id="review" rows="10" placeholder="Type your review here..." required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit Review</button>
+        </form>
+    </div>
+</body>
+</html>
