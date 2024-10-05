@@ -8,7 +8,7 @@ This Django-based web application analyzes the sentiment of user reviews, classi
 
 ## Installation 
 Open the folder in your preferred IDE and execute the following commands <br>
-Note: **it is preferred to creta a virtual environment first** <br>
+Note: **it is preferred to create a virtual environment first** <br>
 - 1) pip install -r requirements.txt (Install dependencies) <br>
 - 2) python manage.py migrate (setup sqlite3 db) <br>
 - 3) python manage.py runserver (Run the Django development server) <br>
